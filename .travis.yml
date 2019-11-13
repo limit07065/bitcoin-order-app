@@ -25,7 +25,7 @@ before_script:
   - npm install -g @angular/cli
   - npm install -g now
 script:
-  - ng build --prod --base-href https://kenken64.github.io/bitcoin-order-app/
+  - ng build --prod --base-href https://limit07065.github.io/bitcoin-order-app/
   # - ng build --prod --output-path ./dist/zeit-cloud --base-href https://weather-app.bunnyppl.now.sh/
   
 deploy:
@@ -34,10 +34,10 @@ deploy:
   github_token: $GITHUB_TOKEN
   local_dir: dist/weather-app
   on:
-    branch: master
+    branch: development
 deploy:
   provider: script
   script: npm run deploy 
   local_dir: dist/bitcoin
   on:
-    branch: master
+    branch: development
