@@ -36,9 +36,9 @@ deploy:
   local_dir: dist/bitcoin
   on:
     branch: development
-deploy:
-  provider: script
-  script: npm run deploy 
-  local_dir: dist/bitcoin
-  on:
-    branch: development
+# deploy:
+#   provider: script
+#   script: npm run deploy 
+#   local_dir: dist/bitcoin
+#   on:
+#     branch: development
